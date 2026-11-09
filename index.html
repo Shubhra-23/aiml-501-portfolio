@@ -527,6 +527,17 @@
           </div>
         </div>
 
+
+        <div class="artifact-card" onclick="openModal('artifactModal2')" style="cursor:pointer;">
+          <div class="artifact-num">02</div>
+          <div class="artifact-title">Neural Network Components</div>
+          <div class="artifact-desc">A 12 slide visual presentation that explains layers, neurons, weights, activation functions, loss functions and optimization algorithms, with an architecture diagram.</div>
+          <div class="artifact-footer">
+            <span class="artifact-arrow">→</span>
+            <span class="download-btn">View Details</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -605,7 +616,7 @@
             <div class="modal-sub">
               <div class="modal-sub-label">Tools &amp; Technology Used</div>
               <div class="modal-sub-text" style="margin-bottom:0.8rem;">
-                Claude AI and ChatGPT for brainstorming, and Canva to design the infographic.
+                Claude (an AI assistant) to design and draft the infographic. I reviewed and edited the content.
               </div>
               <div class="tools-row">
                 <span class="tool-tag">Claude (Anthropic)</span>
@@ -663,6 +674,104 @@
           <button onclick="closeModal('artifactModal1')" class="btn btn-ghost">← Back to Portfolio</button>
         </div>
 
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- ARTIFACT 02 MODAL -->
+  <div class="modal-overlay" id="artifactModal2" onclick="handleOverlayClick(event, 'artifactModal2')">
+    <div class="modal">
+      <div class="modal-header">
+        <button class="modal-close" onclick="closeModal('artifactModal2')">✕</button>
+        <div class="modal-num">Artifact 02</div>
+        <div class="modal-title">Neural Network Components</div>
+      </div>
+      <div class="modal-body">
+        <div>
+          <a href="neural-network-components.pdf" target="_blank">
+            <img src="nn-overview.png" alt="Overview of a 12 slide presentation on neural network components. Slides show an architecture diagram with input, hidden and output layers, a grouping of the six components, and one slide each for layers, neurons, weights, activation functions, loss functions and optimization algorithms, followed by a training loop flowchart, Playground experiments and a summary." style="width:100%;height:auto;display:block;border-radius:8px;">
+          </a>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">Introduction</div>
+          <p class="modal-intro">
+            Neural networks get called black boxes a lot. I made this deck to open the box and show what is inside, one part at a time.
+          </p>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">Description</div>
+          <div class="modal-desc-grid">
+            <div class="modal-sub">
+              <div class="modal-sub-label">Description</div>
+              <div class="modal-sub-text">
+                A 12 slide deck. It opens with an architecture diagram of the input, hidden and output layers. Then one slide each covers layers, neurons, weights and biases, activation functions, loss functions and optimization algorithms. A flowchart shows how they work together in a training loop, and a summary slide explains why visualizing networks matters.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Objective</div>
+              <div class="modal-sub-text">
+                To understand what each part of a neural network does and how the parts depend on each other, using the TensorFlow Neural Network Playground to see the effects.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Process</div>
+              <div class="modal-sub-text">
+                I grouped the six components by the question each one answers: structure, computation and learning. Each slide gives a short definition and one visual. I used the Playground to see how data type, noise, features, and layers and neurons change training time, complexity and performance.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Tools &amp; Technology Used</div>
+              <div class="modal-sub-text" style="margin-bottom:0.8rem;">
+                Claude (an AI assistant) to build the slides. TensorFlow Neural Network Playground for the experiments.
+              </div>
+              <div class="tools-row">
+                <span class="tool-tag">Claude (Anthropic)</span>
+                <span class="tool-tag">TensorFlow Playground</span>
+                <span class="tool-tag">Slide Design</span>
+                <span class="tool-tag">GitHub Pages</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">Value Proposition of the Artifact</div>
+          <p class="modal-text" style="margin-bottom:1.5rem;">
+            Artifact 01 showed that I can sort out which algorithm fits which problem. This one shows I can explain how a model works inside, which matters for responsible AI work.
+          </p>
+          <div class="value-row">
+            <div class="modal-sub">
+              <div class="modal-sub-label">Unique Value</div>
+              <div class="modal-sub-text">
+                Every component sits in a group with a reason, and a training loop slide shows how they connect.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Relevance</div>
+              <div class="modal-sub-text">
+                In healthcare and finance, people have to explain how a model reached a result. Knowing the parts is the start of that.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">References</div>
+          <ul class="ref-list">
+            <li>TensorFlow. (n.d.). <em>A Neural Network Playground</em>. https://playground.tensorflow.org/</li>
+          </ul>
+          <p class="modal-text" style="margin-top:1.2rem;font-style:italic;">
+            AI use disclosure: I used Claude AI to help me build the slides and organize the content. I reviewed the content myself.
+          </p>
+        </div>
+        <div class="modal-divider"></div>
+        <div class="modal-cta">
+          <a href="neural-network-components.pdf" target="_blank" class="btn btn-primary">↗ View Full Presentation (PDF)</a>
+          <button onclick="closeModal('artifactModal2')" class="btn btn-ghost">← Back to Portfolio</button>
+        </div>
       </div>
     </div>
   </div>
