@@ -538,6 +538,17 @@
           </div>
         </div>
 
+
+        <div class="artifact-card" onclick="openModal('artifactModal3')" style="cursor:pointer;">
+          <div class="artifact-num">03</div>
+          <div class="artifact-title">What It Takes to Train a Large Language Model</div>
+          <div class="artifact-desc">An infographic that follows a large language model from raw text to deployment and shows what each stage costs in data, compute, energy and time, with figures from GPT-4, Gemini Ultra, Llama 3.1 405B and Claude.</div>
+          <div class="artifact-footer">
+            <span class="artifact-arrow">→</span>
+            <span class="download-btn">View Details</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -725,7 +736,7 @@
             <div class="modal-sub">
               <div class="modal-sub-label">Tools &amp; Technology Used</div>
               <div class="modal-sub-text" style="margin-bottom:0.8rem;">
-                Claude (an AI assistant) to explore different approaches and organize my ideas for the slides. TensorFlow Neural Network Playground for the experiments.
+                Claude (an AI assistant) to build the slides. TensorFlow Neural Network Playground for the experiments.
               </div>
               <div class="tools-row">
                 <span class="tool-tag">Claude (Anthropic)</span>
@@ -764,13 +775,116 @@
             <li>TensorFlow. (n.d.). <em>A Neural Network Playground</em>. https://playground.tensorflow.org/</li>
           </ul>
           <p class="modal-text" style="margin-top:1.2rem;font-style:italic;">
-            AI use disclosure: I used Claude AI to help me with understanding, learning and also organize my ideas.
+            AI use disclosure: I used Claude AI to help me build the slides and organize the content. I reviewed the content myself.
           </p>
         </div>
         <div class="modal-divider"></div>
         <div class="modal-cta">
           <a href="neural-network-components.pdf" target="_blank" class="btn btn-primary">↗ View Full Presentation (PDF)</a>
           <button onclick="closeModal('artifactModal2')" class="btn btn-ghost">← Back to Portfolio</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARTIFACT 03 MODAL -->
+  <div class="modal-overlay" id="artifactModal3" onclick="handleOverlayClick(event, 'artifactModal3')">
+    <div class="modal">
+      <div class="modal-header">
+        <button class="modal-close" onclick="closeModal('artifactModal3')">✕</button>
+        <div class="modal-num">Artifact 03</div>
+        <div class="modal-title">What It Takes to Train a Large Language Model</div>
+      </div>
+      <div class="modal-body">
+        <div>
+          <a href="llm-training-costs.png" target="_blank">
+            <img src="llm-training-costs.png" alt="Infographic titled What It Takes to Train a Large Language Model. It shows four headline numbers, a seven stage training pipeline from collecting data to deployment, four resource cards for data, compute, energy and time, a bar chart of estimated training costs from the 2017 Transformer at 900 dollars to Gemini Ultra at about 191 million dollars, and a table comparing GPT-4, Gemini Ultra, Llama 3.1 405B and Claude 3 Opus." style="width:100%;height:auto;display:block;border-radius:8px;">
+          </a>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">Introduction</div>
+          <p class="modal-intro">
+            Training a model like GPT-4 or Llama costs far more than most people guess, and the companies rarely publish the details. I made this infographic to put the process and the costs on one page.
+          </p>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">Description</div>
+          <div class="modal-desc-grid">
+            <div class="modal-sub">
+              <div class="modal-sub-label">Description</div>
+              <div class="modal-sub-text">
+                A one-page infographic. It opens with four headline numbers, then walks through seven training stages from data collection to deployment. Four cards cover the resources: data, compute, energy and time. A bar chart compares estimated training costs from the 2017 Transformer ($900) to Gemini Ultra (about $191 million), and a table sets GPT-4, Gemini Ultra, Llama 3.1 405B and Claude side by side. It marks which figures are published, which are outside estimates, and which are my own calculations.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Objective</div>
+              <div class="modal-sub-text">
+                To explain what goes into training a large language model and what it costs, using real figures, and to be clear about which numbers are solid and which are guesses.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Process</div>
+              <div class="modal-sub-text">
+                I pulled cost and energy figures from Epoch AI, the Stanford AI Index and Meta's Llama 3.1 release. Meta is the only company in the set that publishes its GPU-hours, so I used Llama 3.1 405B for the resource cards and worked out its energy use and dollar range myself, labeled as my calculation. For GPT-4 and Gemini Ultra I used outside estimates. For Claude the table says "not disclosed", because Anthropic has not published training figures. The hardest part was that sources disagree. GPT-4 is about $78 million by one estimate and about $500 million by another that counts hardware, so I stated what each number measures.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Tools &amp; Technology Used</div>
+              <div class="modal-sub-text" style="margin-bottom:0.8rem;">
+                Claude (an AI assistant) to design the infographic and draft the text. I reviewed and edited the content.
+              </div>
+              <div class="tools-row">
+                <span class="tool-tag">Claude (Anthropic)</span>
+                <span class="tool-tag">Infographic Design</span>
+                <span class="tool-tag">Data Visualization</span>
+                <span class="tool-tag">GitHub Pages</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">Value Proposition of the Artifact</div>
+          <p class="modal-text" style="margin-bottom:1.5rem;">
+            Artifact 01 sorted algorithms and Artifact 02 explained how a network works inside. This one is about the resources behind the models. It shows I can turn research into numbers a non-technical reader can follow, and that I am upfront about uncertainty.
+          </p>
+          <div class="value-row">
+            <div class="modal-sub">
+              <div class="modal-sub-label">Unique Value</div>
+              <div class="modal-sub-text">
+                Every figure is labeled as published, estimated or my own calculation, so a reader knows how much to trust it.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Relevance</div>
+              <div class="modal-sub-text">
+                People who recommend, buy or regulate AI systems need to know what they cost to build and how much energy they use. That matters in healthcare and finance, where those decisions get made.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">References</div>
+          <ul class="ref-list">
+            <li>Epoch AI. (2024, June 3). <em>How much does it cost to train frontier AI models?</em> https://epoch.ai/blog/how-much-does-it-cost-to-train-a-large-language-model</li>
+            <li>Epoch AI. (n.d.). <em>Models over 1e25 FLOP</em>. https://epoch.ai/data-insights/models-over-1e25-flop</li>
+            <li>Epoch AI. (n.d.). <em>Most of OpenAI's 2024 compute went to experiments</em>. https://epoch.ai/data-insights/openai-compute-spend</li>
+            <li>Fortune. (2024, April 18). <em>Google's Gemini Ultra cost $191 million to train, Stanford University report estimates</em>. https://fortune.com/2024/04/18/google-gemini-cost-191-million-to-train-stanford-university-report-estimates</li>
+            <li>Hugging Face. (2024). <em>Llama 3.1: 405B, 70B and 8B with multilinguality and long context</em>. https://huggingface.co/blog/llama31</li>
+            <li>The Register. (2024, July 23). <em>Meta claims 'world's largest' open AI model with Llama 3.1 405B debut</em>. https://www.theregister.com/2024/07/23/meta_llama31_405b/</li>
+          </ul>
+          <p class="modal-text" style="margin-top:1.2rem;font-style:italic;">
+            AI use disclosure: I used Claude to design the infographic and draft the text and the explanatory document. I reviewed and edited the content to reflect my own understanding.
+          </p>
+        </div>
+        <div class="modal-divider"></div>
+        <div class="modal-cta">
+          <a href="llm-training-costs.png" target="_blank" class="btn btn-primary">↗ View Full Infographic</a>
+          <a href="llm-training-explanation.pdf" target="_blank" class="btn btn-ghost">Explanatory Document (PDF)</a>
+          <button onclick="closeModal('artifactModal3')" class="btn btn-ghost">← Back to Portfolio</button>
         </div>
       </div>
     </div>
