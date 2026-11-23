@@ -471,6 +471,7 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#value">Value</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#artifacts">Artifacts</a></li>
       <li><a href="#connect">Connect</a></li>
     </ul>
@@ -509,6 +510,24 @@
     </div>
   </section>
 
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section">
+      <div class="section-label">What I Work With</div>
+      <h2 class="section-title">Skills</h2>
+      <div class="tools-row">
+        <span class="tool-tag">SQL</span>
+        <span class="tool-tag">Python</span>
+        <span class="tool-tag">Data Analysis</span>
+        <span class="tool-tag">Machine Learning Concepts</span>
+        <span class="tool-tag">Neural Networks</span>
+        <span class="tool-tag">Data Visualization</span>
+        <span class="tool-tag">Explainable AI</span>
+        <span class="tool-tag">Technical Writing</span>
+      </div>
+    </div>
+  </section>
+
   <!-- ARTIFACTS -->
   <section class="artifacts-section" id="artifacts">
     <div class="artifacts-inner">
@@ -539,10 +558,10 @@
         </div>
 
 
-        <div class="artifact-card" onclick="openModal('artifactModal3')" style="cursor:pointer;">
-          <div class="artifact-num">03</div>
-          <div class="artifact-title">What It Takes to Train a Large Language Model</div>
-          <div class="artifact-desc">An infographic that follows a large language model from raw text to deployment and shows what each stage costs in data, compute, energy and time, with figures from GPT-4, Gemini Ultra, Llama 3.1 405B and Claude.</div>
+        <div class="artifact-card" onclick="openModal('artifactModal4')" style="cursor:pointer;">
+          <div class="artifact-num">04</div>
+          <div class="artifact-title">Explainable AI: Seeing How AI Decides</div>
+          <div class="artifact-desc">An infographic for non technical readers on why AI is hard to explain, how validation and metrics check it, and what Anthropic, OpenAI, Google DeepMind and Meta are doing.</div>
           <div class="artifact-footer">
             <span class="artifact-arrow">→</span>
             <span class="download-btn">View Details</span>
@@ -736,7 +755,7 @@
             <div class="modal-sub">
               <div class="modal-sub-label">Tools &amp; Technology Used</div>
               <div class="modal-sub-text" style="margin-bottom:0.8rem;">
-                Claude (an AI assistant) for brainstorming and understand the assignment deeply. TensorFlow Neural Network Playground for the experiments.
+                Claude (an AI assistant) to build the slides. TensorFlow Neural Network Playground for the experiments.
               </div>
               <div class="tools-row">
                 <span class="tool-tag">Claude (Anthropic)</span>
@@ -775,7 +794,7 @@
             <li>TensorFlow. (n.d.). <em>A Neural Network Playground</em>. https://playground.tensorflow.org/</li>
           </ul>
           <p class="modal-text" style="margin-top:1.2rem;font-style:italic;">
-            AI use disclosure: I used Claude AI to help me with brainstorming and then arranging my ideas.
+            AI use disclosure: I used Claude AI to help me build the slides and organize the content. I reviewed the content myself.
           </p>
         </div>
         <div class="modal-divider"></div>
@@ -787,25 +806,26 @@
     </div>
   </div>
 
-  <!-- ARTIFACT 03 MODAL -->
-  <div class="modal-overlay" id="artifactModal3" onclick="handleOverlayClick(event, 'artifactModal3')">
+  
+  <!-- ARTIFACT 04 MODAL -->
+  <div class="modal-overlay" id="artifactModal4" onclick="handleOverlayClick(event, 'artifactModal4')">
     <div class="modal">
       <div class="modal-header">
-        <button class="modal-close" onclick="closeModal('artifactModal3')">✕</button>
-        <div class="modal-num">Artifact 03</div>
-        <div class="modal-title">What It Takes to Train a Large Language Model</div>
+        <button class="modal-close" onclick="closeModal('artifactModal4')">✕</button>
+        <div class="modal-num">Artifact 04</div>
+        <div class="modal-title">Explainable AI: Seeing How AI Decides</div>
       </div>
       <div class="modal-body">
         <div>
-          <a href="llm-training-costs.png" target="_blank">
-            <img src="llm-training-costs.png" alt="Infographic titled What It Takes to Train a Large Language Model. It shows four headline numbers, a seven stage training pipeline from collecting data to deployment, four resource cards for data, compute, energy and time, a bar chart of estimated training costs from the 2017 Transformer at 900 dollars to Gemini Ultra at about 191 million dollars, and a table comparing GPT-4, Gemini Ultra, Llama 3.1 405B and Claude 3 Opus." style="width:100%;height:auto;display:block;border-radius:8px;">
+          <a href="xai-infographic.png" target="_blank">
+            <img src="xai-infographic.png" alt="Infographic titled Explainable AI: Seeing How AI Decides. Four numbered sections. One defines explainable AI and why it matters for trust, accountability and the law. Two lists four reasons explaining AI is hard: the black box, explanations after the fact, bias in the data, and rules and audiences. Three shows a four step validation flow and four metrics in plain English: accuracy, precision, recall and F1. Four compares Anthropic, OpenAI, Google DeepMind and Meta, plus tools like LIME, SHAP and model cards. A takeaway says explain it, validate it, measure it." style="width:100%;height:auto;display:block;border-radius:8px;">
           </a>
         </div>
         <div class="modal-divider"></div>
         <div>
           <div class="modal-section-label">Introduction</div>
           <p class="modal-intro">
-            Training a model like GPT-4 or Llama costs far more than most people guess, and the companies rarely publish the details. I made this infographic to put the process and the costs on one page.
+            AI now helps decide things in hospitals, banks and courts, and most people can't see how. I made this infographic to explain, in plain English, how we try to look inside AI and check that it can be trusted.
           </p>
         </div>
         <div class="modal-divider"></div>
@@ -815,30 +835,30 @@
             <div class="modal-sub">
               <div class="modal-sub-label">Description</div>
               <div class="modal-sub-text">
-                A one-page infographic. It opens with four headline numbers, then walks through seven training stages from data collection to deployment. Four cards cover the resources: data, compute, energy and time. A bar chart compares estimated training costs from the 2017 Transformer ($900) to Gemini Ultra (about $191 million), and a table sets GPT-4, Gemini Ultra, Llama 3.1 405B and Claude side by side. It marks which figures are published, which are outside estimates, and which are my own calculations.
+                A one page infographic in four numbered sections. It defines explainable AI, gives four reasons it's hard to explain AI, shows how validation and performance metrics check reliability, and compares what Anthropic, OpenAI, Google DeepMind and Meta are doing. It ends with a takeaway: explain it, validate it, measure it.
               </div>
             </div>
             <div class="modal-sub">
               <div class="modal-sub-label">Objective</div>
               <div class="modal-sub-text">
-                To explain what goes into training a large language model and what it costs, using real figures, and to be clear about which numbers are solid and which are guesses.
+                To explain a technical, fast moving topic so a non technical reader can follow it, and to be honest about what today's tools can and can't do.
               </div>
             </div>
             <div class="modal-sub">
               <div class="modal-sub-label">Process</div>
               <div class="modal-sub-text">
-                I pulled cost and energy figures from Epoch AI, the Stanford AI Index and Meta's Llama 3.1 release. Meta is the only company in the set that publishes its GPU-hours, so I used Llama 3.1 405B for the resource cards and worked out its energy use and dollar range myself, labeled as my calculation. For GPT-4 and Gemini Ultra I used outside estimates. For Claude the table says "not disclosed", because Anthropic has not published training figures. The hardest part was that sources disagree. GPT-4 is about $78 million by one estimate and about $500 million by another that counts hardware, so I stated what each number measures.
+                Started with primary sources: lab research posts, the NIST AI Risk Management Framework and Article 86 of the EU AI Act. Picked one fact from each that a general reader could use. Then laid the page out as four questions in order: what it is, why it's hard, how we check it, and what's being done. Added a limit to every lab card so no tool looks like the full answer.
               </div>
             </div>
             <div class="modal-sub">
               <div class="modal-sub-label">Tools &amp; Technology Used</div>
               <div class="modal-sub-text" style="margin-bottom:0.8rem;">
-                Claude AI and ChatGPT(AI assistant) for brainstorming and understand the assignment. It also helped with the design of the infographic. 
+                Claude (an AI assistant) to find and read sources and to design and draft the infographic. I reviewed and edited the content.
               </div>
               <div class="tools-row">
                 <span class="tool-tag">Claude (Anthropic)</span>
                 <span class="tool-tag">Infographic Design</span>
-                <span class="tool-tag">Data Visualization</span>
+                <span class="tool-tag">Source Research</span>
                 <span class="tool-tag">GitHub Pages</span>
               </div>
             </div>
@@ -848,19 +868,19 @@
         <div>
           <div class="modal-section-label">Value Proposition of the Artifact</div>
           <p class="modal-text" style="margin-bottom:1.5rem;">
-            Artifact 01 sorted algorithms and Artifact 02 explained how a network works inside. This one is about the resources behind the models. It shows I can turn research into numbers a non-technical reader can follow, and that I am upfront about uncertainty.
+            Artifact 01 sorted algorithms and artifact 02 explained how a neural network works. This one shows I can explain AI to people outside the field, which is the core of responsible AI and AI governance work.
           </p>
           <div class="value-row">
             <div class="modal-sub">
               <div class="modal-sub-label">Unique Value</div>
               <div class="modal-sub-text">
-                Every figure is labeled as published, estimated or my own calculation, so a reader knows how much to trust it.
+                Every claim comes with evidence, and every tool comes with its limits. The page doesn't oversell.
               </div>
             </div>
             <div class="modal-sub">
               <div class="modal-sub-label">Relevance</div>
               <div class="modal-sub-text">
-                People who recommend, buy or regulate AI systems need to know what they cost to build and how much energy they use. That matters in healthcare and finance, where those decisions get made.
+                Healthcare and finance teams need people who can explain a model's decision to a patient, a customer or a regulator. This is practice at doing exactly that.
               </div>
             </div>
           </div>
@@ -869,22 +889,27 @@
         <div>
           <div class="modal-section-label">References</div>
           <ul class="ref-list">
-            <li>Epoch AI. (2024, June 3). <em>How much does it cost to train frontier AI models?</em> https://epoch.ai/blog/how-much-does-it-cost-to-train-a-large-language-model</li>
-            <li>Epoch AI. (n.d.). <em>Models over 1e25 FLOP</em>. https://epoch.ai/data-insights/models-over-1e25-flop</li>
-            <li>Epoch AI. (n.d.). <em>Most of OpenAI's 2024 compute went to experiments</em>. https://epoch.ai/data-insights/openai-compute-spend</li>
-            <li>Fortune. (2024, April 18). <em>Google's Gemini Ultra cost $191 million to train, Stanford University report estimates</em>. https://fortune.com/2024/04/18/google-gemini-cost-191-million-to-train-stanford-university-report-estimates</li>
-            <li>Hugging Face. (2024). <em>Llama 3.1: 405B, 70B and 8B with multilinguality and long context</em>. https://huggingface.co/blog/llama31</li>
-            <li>The Register. (2024, July 23). <em>Meta claims 'world's largest' open AI model with Llama 3.1 405B debut</em>. https://www.theregister.com/2024/07/23/meta_llama31_405b/</li>
+            <li>Anthropic. (2025a, March 27). <em>Tracing the thoughts of a large language model</em>. https://www.anthropic.com/research/tracing-thoughts-language-model</li>
+            <li>Anthropic. (2025b, April 3). <em>Reasoning models don’t always say what they think</em>. https://www.anthropic.com/research/reasoning-models-dont-say-think</li>
+            <li>European Union. (2024). Regulation (EU) 2024/1689 (Artificial Intelligence Act), Article 86. https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-86</li>
+            <li>Google DeepMind. (2024, July 31). <em>Gemma Scope: Helping the safety community shed light on the inner workings of language models</em>. https://deepmind.google/blog/gemma-scope-helping-the-safety-community-shed-light-on-the-inner-workings-of-language-models/</li>
+            <li>Hendrycks, D., Burns, C., Basart, S., Zou, A., Mazeika, M., Song, D., &amp; Steinhardt, J. (2020). <em>Measuring massive multitask language understanding</em> [Preprint]. arXiv. https://arxiv.org/abs/2009.03300</li>
+            <li>Lundberg, S., &amp; Lee, S.-I. (2017). <em>A unified approach to interpreting model predictions</em> [Preprint]. arXiv. https://arxiv.org/abs/1705.07874</li>
+            <li>Meta AI. (2019, October 10). <em>Open-sourcing Captum: A model interpretability library for PyTorch</em>. https://ai.meta.com/blog/open-sourcing-captum-a-model-interpretability-library-for-pytorch</li>
+            <li>Mitchell, M., Wu, S., Zaldivar, A., Barnes, P., Vasserman, L., Hutchinson, B., Spitzer, E., Raji, I. D., &amp; Gebru, T. (2019). <em>Model cards for model reporting</em> [Preprint]. arXiv. https://arxiv.org/abs/1810.03993</li>
+            <li>National Institute of Standards and Technology. (2023). <em>Artificial intelligence risk management framework (AI RMF 1.0)</em> (NIST AI 100-1). https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf</li>
+            <li>OpenAI. (2024, June 6). <em>Extracting concepts from GPT-4</em>. https://openai.com/index/extracting-concepts-from-gpt-4/</li>
+            <li>Ribeiro, M. T., Singh, S., &amp; Guestrin, C. (2016). <em>“Why should I trust you?”: Explaining the predictions of any classifier</em> [Preprint]. arXiv. https://arxiv.org/abs/1602.04938</li>
           </ul>
           <p class="modal-text" style="margin-top:1.2rem;font-style:italic;">
-            AI use disclosure: I used Claude and ChatGPT for brainstorming and understanding the assignment, it also helped me with the design the infographic, whose base was created by me.
+            AI use disclosure: I used Claude AI to help research sources, design the infographic and draft the explanation. I reviewed and edited the content.
           </p>
         </div>
         <div class="modal-divider"></div>
         <div class="modal-cta">
-          <a href="llm-training-costs.png" target="_blank" class="btn btn-primary">↗ View Full Infographic</a>
-          <a href="llm-training-explanation.pdf" target="_blank" class="btn btn-ghost">Explanatory Document (PDF)</a>
-          <button onclick="closeModal('artifactModal3')" class="btn btn-ghost">← Back to Portfolio</button>
+          <a href="xai-infographic.png" target="_blank" class="btn btn-primary">↗ View Full Infographic</a>
+          <a href="Shambhavi_XAI_Explanatory_Document.docx" class="btn btn-ghost">Download Explanatory Document</a>
+          <button onclick="closeModal('artifactModal4')" class="btn btn-ghost">← Back to Portfolio</button>
         </div>
       </div>
     </div>
