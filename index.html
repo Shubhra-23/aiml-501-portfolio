@@ -805,6 +805,135 @@
       </div>
     </div>
   </div>
+  
+
+    <!-- ARTIFACT 03 MODAL -->
+  <div class="modal-overlay" id="artifactModal3" onclick="handleOverlayClick(event, 'artifactModal3')">
+    <div class="modal">
+      <div class="modal-header">
+        <button class="modal-close" onclick="closeModal('artifactModal3')">✕</button>
+        <div class="modal-num">Artifact 03</div>
+        <div class="modal-title">What It Takes to Train a Large Language Model</div>
+      </div>
+      <div class="modal-body">
+        <div>
+          <a href="llm-training-costs.png" target="_blank">
+            <img src="llm-training-costs.png" alt="Infographic titled What It Takes to Train a Large Language Model. It shows four headline numbers, a seven stage training pipeline from collecting data to deployment, four resource cards for data, compute, energy and time, a bar chart of estimated training costs from the 2017 Transformer at 900 dollars to Gemini Ultra at about 191 million dollars, and a table comparing GPT-4, Gemini Ultra, Llama 3.1 405B and Claude 3 Opus." style="width:100%;height:auto;display:block;border-radius:8px;">
+          </a>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">Introduction</div>
+          <p class="modal-intro">
+            Training a model like GPT-4 or Llama costs far more than most people guess, and the companies rarely publish the details. I made this infographic to put the process and the costs on one page.
+          </p>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">Description</div>
+          <div class="modal-desc-grid">
+            <div class="modal-sub">
+              <div class="modal-sub-label">Description</div>
+              <div class="modal-sub-text">
+                A one-page infographic. It opens with four headline numbers, then walks through seven training stages from data collection to deployment. Four cards cover the resources: data, compute, energy and time. A bar chart compares estimated training costs from the 2017 Transformer ($900) to Gemini Ultra (about $191 million), and a table sets GPT-4, Gemini Ultra, Llama 3.1 405B and Claude side by side. It marks which figures are published, which are outside estimates, and which are my own calculations.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Objective</div>
+              <div class="modal-sub-text">
+                To explain what goes into training a large language model and what it costs, using real figures, and to be clear about which numbers are solid and which are guesses.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Process</div>
+              <div class="modal-sub-text">
+                I pulled cost and energy figures from Epoch AI, the Stanford AI Index and Meta's Llama 3.1 release. Meta is the only company in the set that publishes its GPU-hours, so I used Llama 3.1 405B for the resource cards and worked out its energy use and dollar range myself, labeled as my calculation. For GPT-4 and Gemini Ultra I used outside estimates. For Claude the table says "not disclosed", because Anthropic has not published training figures. The hardest part was that sources disagree. GPT-4 is about $78 million by one estimate and about $500 million by another that counts hardware, so I stated what each number measures.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Tools &amp; Technology Used</div>
+              <div class="modal-sub-text" style="margin-bottom:0.8rem;">
+                Claude AI and ChatGPT(AI assistant) for brainstorming and understand the assignment. It also helped with the design of the infographic. 
+              </div>
+              <div class="tools-row">
+                <span class="tool-tag">Claude (Anthropic)</span>
+                <span class="tool-tag">Infographic Design</span>
+                <span class="tool-tag">Data Visualization</span>
+                <span class="tool-tag">GitHub Pages</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">Value Proposition of the Artifact</div>
+          <p class="modal-text" style="margin-bottom:1.5rem;">
+            Artifact 01 sorted algorithms and Artifact 02 explained how a network works inside. This one is about the resources behind the models. It shows I can turn research into numbers a non-technical reader can follow, and that I am upfront about uncertainty.
+          </p>
+          <div class="value-row">
+            <div class="modal-sub">
+              <div class="modal-sub-label">Unique Value</div>
+              <div class="modal-sub-text">
+                Every figure is labeled as published, estimated or my own calculation, so a reader knows how much to trust it.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Relevance</div>
+              <div class="modal-sub-text">
+                People who recommend, buy or regulate AI systems need to know what they cost to build and how much energy they use. That matters in healthcare and finance, where those decisions get made.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">References</div>
+          <ul class="ref-list">
+            <li>Epoch AI. (2024, June 3). <em>How much does it cost to train frontier AI models?</em> https://epoch.ai/blog/how-much-does-it-cost-to-train-a-large-language-model</li>
+            <li>Epoch AI. (n.d.). <em>Models over 1e25 FLOP</em>. https://epoch.ai/data-insights/models-over-1e25-flop</li>
+            <li>Epoch AI. (n.d.). <em>Most of OpenAI's 2024 compute went to experiments</em>. https://epoch.ai/data-insights/openai-compute-spend</li>
+            <li>Fortune. (2024, April 18). <em>Google's Gemini Ultra cost $191 million to train, Stanford University report estimates</em>. https://fortune.com/2024/04/18/google-gemini-cost-191-million-to-train-stanford-university-report-estimates</li>
+            <li>Hugging Face. (2024). <em>Llama 3.1: 405B, 70B and 8B with multilinguality and long context</em>. https://huggingface.co/blog/llama31</li>
+            <li>The Register. (2024, July 23). <em>Meta claims 'world's largest' open AI model with Llama 3.1 405B debut</em>. https://www.theregister.com/2024/07/23/meta_llama31_405b/</li>
+          </ul>
+          <p class="modal-text" style="margin-top:1.2rem;font-style:italic;">
+            AI use disclosure: I used Claude and ChatGPT for brainstorming and understanding the assignment, it also helped me with the design the infographic, whose base was created by me.
+          </p>
+        </div>
+        <div class="modal-divider"></div>
+        <div class="modal-cta">
+          <a href="llm-training-costs.png" target="_blank" class="btn btn-primary">↗ View Full Infographic</a>
+          <a href="llm-training-explanation.pdf" target="_blank" class="btn btn-ghost">Explanatory Document (PDF)</a>
+          <button onclick="closeModal('artifactModal3')" class="btn btn-ghost">← Back to Portfolio</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    function handleOverlayClick(e, id) {
+      if (e.target === document.getElementById(id)) closeModal(id);
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-overlay.open').forEach(function(m) {
+          m.classList.remove('open');
+        });
+        document.body.style.overflow = '';
+      }
+    });
+  </script>
+
+</body>
+</html>
 
   
   <!-- ARTIFACT 04 MODAL -->
@@ -853,7 +982,7 @@
             <div class="modal-sub">
               <div class="modal-sub-label">Tools &amp; Technology Used</div>
               <div class="modal-sub-text" style="margin-bottom:0.8rem;">
-                Claude (an AI assistant) to find and read sources and to design and draft the infographic. I reviewed and edited the content.
+                Claude and ChatGPT for brainstorming and to find and read sources and Canva AI to design the infographic.
               </div>
               <div class="tools-row">
                 <span class="tool-tag">Claude (Anthropic)</span>
@@ -902,7 +1031,7 @@
             <li>Ribeiro, M. T., Singh, S., &amp; Guestrin, C. (2016). <em>“Why should I trust you?”: Explaining the predictions of any classifier</em> [Preprint]. arXiv. https://arxiv.org/abs/1602.04938</li>
           </ul>
           <p class="modal-text" style="margin-top:1.2rem;font-style:italic;">
-            AI use disclosure: I used Claude AI to help research sources, design the infographic and draft the explanation. I reviewed and edited the content.
+            AI use disclosure: I used Claude AI and ChatGPT to help research sources, Canva AI to design the infographic.
           </p>
         </div>
         <div class="modal-divider"></div>
