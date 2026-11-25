@@ -579,6 +579,17 @@
           </div>
         </div>
 
+
+            <div class="artifact-card" onclick="openModal('artifactModal5')" style="cursor:pointer;">
+          <div class="artifact-num">05</div>
+          <div class="artifact-title">Pre-Trained Model Decision Matrix</div>
+          <div class="artifact-desc">A decision matrix that compares five pre trained models across NLP, vision and tabular data on size, accuracy, speed and explainability, with a recommendation for each domain.</div>
+          <div class="artifact-footer">
+            <span class="artifact-arrow">→</span>
+            <span class="download-btn">View Details</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -1050,6 +1061,134 @@
           <a href="xai-infographic.png" target="_blank" class="btn btn-primary">↗ View Full Infographic</a>
           <a href="Shambhavi_XAI_Explanatory_Document.docx" class="btn btn-ghost">Download Explanatory Document</a>
           <button onclick="closeModal('artifactModal4')" class="btn btn-ghost">← Back to Portfolio</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    function handleOverlayClick(e, id) {
+      if (e.target === document.getElementById(id)) closeModal(id);
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-overlay.open').forEach(function(m) {
+          m.classList.remove('open');
+        });
+        document.body.style.overflow = '';
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+
+ <!-- ARTIFACT 05 MODAL -->
+  <div class="modal-overlay" id="artifactModal5" onclick="handleOverlayClick(event, 'artifactModal5')">
+    <div class="modal">
+      <div class="modal-header">
+        <button class="modal-close" onclick="closeModal('artifactModal5')">✕</button>
+        <div class="modal-num">Artifact 05</div>
+        <div class="modal-title">Pre-Trained Model Decision Matrix</div>
+      </div>
+      <div class="modal-body">
+        <div>
+          <iframe src="decision-matrix.html" title="Pre-trained model decision matrix comparing BERT base, DistilBERT, EfficientNetB0, EfficientNetB7 and LightGBM on size, accuracy, speed and explainability" style="width:100%;height:760px;border:1px solid var(--border);border-radius:8px;background:#FAF9F5;"></iframe>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">Introduction</div>
+          <p class="modal-intro">
+            The biggest model is rarely the right one. I made this matrix to show how size, accuracy, speed and explainability trade off, so that picking a pre trained model is a decision I can defend.
+          </p>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">Description</div>
+          <div class="modal-desc-grid">
+            <div class="modal-sub">
+              <div class="modal-sub-label">Description</div>
+              <div class="modal-sub-text">
+                A matrix with five models in three groups. BERT base and DistilBERT cover NLP. EfficientNetB0 and B7 cover vision. LightGBM covers tabular data. Each model is rated strong, medium or weak on size, accuracy, speed and explainability, using a color, an icon and a word. The real numbers sit in each cell, and an extra column holds what the numbers miss, like whether a model needs a GPU or fits on a phone.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Objective</div>
+              <div class="modal-sub-text">
+                To balance size, accuracy and speed on purpose, and to treat explainability as a real criterion instead of an afterthought.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Process</div>
+              <div class="modal-sub-text">
+                I picked models in pairs from the same family so the trade off is easy to see. The numbers come from published sources: the DistilBERT paper, the Keras Applications table, the LightGBM paper and a tabular benchmark. Ratings compare models inside one domain only, since the benchmarks don't line up across domains. I dropped MobileNetV2 because I couldn't find a clean row for it. I also noted that LightGBM isn't pretrained, so its size and speed ratings are qualitative.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Tools &amp; Technology Used</div>
+              <div class="modal-sub-text" style="margin-bottom:0.8rem;">
+                ChatGPT and Claude AI to find sources and to design the matrix. They also helped me in brainstorming and understanding different topics related with the assignment.
+              </div>
+              <div class="tools-row">
+                <span class="tool-tag">ChatGPT</span>
+                <span class="tool-tag">Claude (Anthropic)</span>
+                <span class="tool-tag">Decision Matrix</span>
+                <span class="tool-tag">Source Research</span>
+                <span class="tool-tag">GitHub Pages</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">Value Proposition of the Artifact</div>
+          <p class="modal-text" style="margin-bottom:1.5rem;">
+            The earlier artifacts sorted algorithms, opened up a neural network and explained AI to non technical readers. This one shows I can compare real models on evidence and make a recommendation, which is the day to day work of model development.
+          </p>
+          <div class="value-row">
+            <div class="modal-sub">
+              <div class="modal-sub-label">Unique Value</div>
+              <div class="modal-sub-text">
+                Every rating is backed by a number or a source, and the limits are stated. Nothing is rated on a made up shared scale.
+              </div>
+            </div>
+            <div class="modal-sub">
+              <div class="modal-sub-label">Relevance</div>
+              <div class="modal-sub-text">
+                In healthcare and finance, a slightly less accurate model that people can explain, and that runs on the hardware available, is often the better choice. This is practice at making that call.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-divider"></div>
+        <div>
+          <div class="modal-section-label">References</div>
+          <ul class="ref-list">
+            <li>Grinsztajn, L., Oyallon, E., &amp; Varoquaux, G. (2022). Why do tree-based models still outperform deep learning on typical tabular data? <em>Advances in Neural Information Processing Systems, 35</em> (Datasets and Benchmarks Track). https://arxiv.org/abs/2207.08815</li>
+            <li>Hugging Face. (n.d.). <em>BERT release collection</em>. https://huggingface.co/collections/google/bert-release-64ff5e7a4be99045d1896dbc</li>
+            <li>Ke, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., Ye, Q., &amp; Liu, T.-Y. (2017). LightGBM: A highly efficient gradient boosting decision tree. <em>Advances in Neural Information Processing Systems, 30</em>, 3146–3154.</li>
+            <li>Keras. (n.d.). <em>Keras Applications</em>. https://keras.io/api/applications/</li>
+            <li>Lundberg, S. M., Erion, G., Chen, H., DeGrave, A., Prutkin, J. M., Nair, B., Katz, R., Himmelfarb, J., Bansal, N., &amp; Lee, S.-I. (2020). From local explanations to global understanding with explainable AI for trees. <em>Nature Machine Intelligence, 2</em>(1), 56–67. https://doi.org/10.1038/s42256-019-0138-9</li>
+            <li>Sanh, V., Debut, L., Chaumond, J., &amp; Wolf, T. (2019). DistilBERT, a distilled version of BERT: Smaller, faster, cheaper and lighter. <em>arXiv</em>. https://arxiv.org/abs/1910.01108</li>
+          </ul>
+          <p class="modal-text" style="margin-top:1.2rem;font-style:italic;">
+            AI use disclosure: I used ChatGPT and Claude AI for brainstorming ideas, to help research sources and also to help with the design of matrix.
+          </p>
+        </div>
+        <div class="modal-divider"></div>
+        <div class="modal-cta">
+          <a href="decision-matrix.html" target="_blank" class="btn btn-primary">↗ View Full Matrix</a>
+          <a href="Shambhavi_Decision_Matrix_Explanatory_Document.docx" class="btn btn-ghost">Download Explanatory Document</a>
+          <button onclick="closeModal('artifactModal5')" class="btn btn-ghost">← Back to Portfolio</button>
         </div>
       </div>
     </div>
